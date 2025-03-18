@@ -1,0 +1,421 @@
+/* 🔹 Reset básico */
+/* 🔹 Añadir un desplazamiento para evitar que el navbar oculte el contenido */
+html {
+  scroll-padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #0a0a0a;
+  color: #00ffcc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 🔹 Header y Navbar */
+header {
+  background-color: #1a1a1a;
+  box-shadow: 0px 4px 6px rgba(0, 255, 204, 0.2);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ffcc;
+}
+
+.username {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #00ffcc;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+  background: rgba(0, 255, 204, 0.1);
+  color: #00ffcc;
+}
+
+/* 🔹 Estilos para el contenedor de los botones móviles */
+.nav-right-mobile {
+  display: none; /* Ocultar por defecto */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+/* 🔹 Estilos para el botón de cambio de tema */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #00ffcc;
+}
+
+/* 🔹 Estilos para el botón del menú hamburguesa */
+.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #00ffcc;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: #1a1a1a;
+  box-shadow: 0px 4px 6px rgba(0, 255, 204, 0.2);
+  padding: 15px 0;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-menu ul li {
+  padding: 12px 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+/* 🔹 Efectos de neón */
+.neon-text {
+  color: #00ffcc;
+  text-shadow: 0 0 2px #00ffcc, 0 0 2px #00ffcc, 0 0 2px #00ffcc;
+}
+
+.neon-box {
+  background: #1a1a1a;
+  border: 2px solid #00ffcc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.neon-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+
+.neon-box img {
+  padding-left: 2px;
+  width: 20px;
+  height: auto;
+}
+.neon-button {
+  background: #1a1a1a;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.neon-button:hover {
+  background: #00ffcc;
+  color: #1a1a1a;
+}
+
+/* 🔹 Secciones */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section h1,
+.section h2 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+.skills-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill,
+.project-card {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  background: #1a1a1a;
+  border: 2px solid #00ffcc;
+  border-radius: 6px;
+  color: #ffffff;
+  resize: none; /* Bloquea el redimensionamiento */
+}
+
+.contact-form textarea {
+    padding: 10px;
+    background: #1a1a1a;
+    border: 2px solid #00ffcc;
+    border-radius: 6px;
+    color: #ffffff;
+    resize: none; /* Bloquea el redimensionamiento */
+    height: 100px;
+}
+/* Personalizar la barra de desplazamiento */
+textarea::-webkit-scrollbar {
+  width: 6px; /* Ancho de la barra */
+  resize: none; /* Bloquea el redimensionamiento */
+}
+
+/* Fondo de la barra de desplazamiento */
+textarea::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Color de fondo */
+  border-radius: 5px;
+}
+
+/* Color del thumb (deslizador) */
+textarea::-webkit-scrollbar-thumb {
+  background: #00ffcc; /* Color del thumb */
+  border-radius: 5px;
+}
+
+/* Hover del thumb */
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #558b81;
+}
+
+.contact-form button {
+  padding: 10px;
+  background: #1a1a1a;
+  border: 2px solid #00ffcc;
+  color: #00ffcc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 🔹 Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #000957;
+  box-shadow: 0px -4px 6px rgba(0, 255, 204, 0.2);
+}
+
+/* 🔹 Variables de color */
+:root {
+  --primary-color: #02045f; /* Color neón para modo oscuro */
+  --primary-color-light: #a5158c; /* Color azul para modo claro */
+  --background-light: #ffffff; /* Fondo claro */
+  --text-light: #333333; /* Texto oscuro para modo claro */
+  --border-light: #cccccc; /* Borde gris para modo claro */
+}
+
+/* 🔹 Modo claro */
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.light-mode header {
+  background-color: var(--background-light); /* Fondo blanco para el header */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.light-mode .nav-links li a {
+  color: var(--text-light); /* Texto oscuro para enlaces */
+}
+
+.light-mode .nav-links li a:hover {
+  background: rgba(0, 123, 255, 0.1); /* Fondo azul claro al hacer hover */
+  color: #ff00cc; /* Color azul al hacer hover */
+}
+
+.light-mode .section h1,
+.light-mode .section h2 {
+  color: var(--primary-color-light); /* Color azul para títulos en modo claro */
+}
+
+.light-mode .profile-icon {
+  border: 2px solid var(--primary-color-light); /* Borde azul para el ícono de perfil */
+}
+
+.light-mode .username {
+  color: var(--primary-color-light); /* Color azul para el nombre de usuario */
+}
+
+.light-mode .neon-text {
+  color: var(--primary-color-light); /* Texto azul para títulos */
+  text-shadow: none;
+}
+
+.light-mode .neon-box {
+  background: var(--background-light);
+  border: 2px solid var(--border-light); /* Borde gris */
+  box-shadow: none;
+  color: var(--text-light); /* Texto oscuro */
+}
+
+.light-mode .neon-box:hover {
+  border-color: var(--primary-color-light); /* Borde azul al hacer hover */
+}
+
+.light-mode .neon-button {
+  background: var(--background-light);
+  border: 2px solid var(--primary-color-light); /* Borde azul */
+  color: var(--primary-color-light); /* Texto azul */
+}
+
+.light-mode .neon-button:hover {
+  background: var(--primary-color-light); /* Fondo azul al hacer hover */
+  color: var(--background-light); /* Texto blanco */
+}
+
+.light-mode .contact-form input,
+.light-mode .contact-form textarea {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  border: 2px solid var(--border-light); /* Borde gris */
+}
+
+.light-mode .contact-form input::placeholder,
+.light-mode .contact-form textarea::placeholder {
+  color: #999999; /* Placeholder gris */
+}
+
+.light-mode textarea::-webkit-scrollbar {
+    width: 10px;
+    /* Ancho de la barra */
+    resize: none;
+    /* Bloquea el redimensionamiento */
+}
+
+/* Fondo de la barra de desplazamiento */
+.light-mode textarea::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Color de fondo */
+    border-radius: 5px;
+}
+
+/* Color del thumb (deslizador) */
+.light-mode textarea::-webkit-scrollbar-thumb {
+    background: #ff00cc;
+    /* Color del thumb */
+    border-radius: 5px;
+}
+
+/* Hover del thumb */
+.light-mode textarea::-webkit-scrollbar-thumb:hover {
+    background: #558b81;
+}
+
+.light-mode .dark-mode-toggle {
+  color: var(--primary-color-light); /* Icono azul */
+}
+
+.light-mode .hamburger-menu {
+  color: var(--primary-color-light); /* Icono azul */
+}
+
+.light-mode .mobile-menu {
+  background-color: var(
+    --background-light
+  ); /* Fondo blanco para el menú móvil */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.light-mode .mobile-menu ul li a {
+  color: var(--text-light); /* Texto oscuro para enlaces del menú móvil */
+}
+
+.light-mode footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  color: #000957;
+  box-shadow: 0px -4px 6px rgba(8, 8, 8, 0.2);
+}
+
+/* 🔹 Media Queries */
+@media (max-width: 847px) {
+  .nav-right {
+    display: none; /* Oculta el nav-right en móvil */
+  }
+
+  .nav-right-mobile {
+    display: flex; /* Muestra el nav-right-mobile en móvil */
+  }
+
+  .hamburger-menu {
+    display: block; /* Muestra el botón de hamburguesa en móvil */
+  }
+
+  .mobile-menu.active {
+    display: flex; /* Muestra el menú móvil cuando está activo */
+  }
+}

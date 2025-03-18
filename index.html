@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Orlando Juárez</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- Sección izquierda (Logo y Nombre) -->
+      <div class="nav-left">
+        <img src="/img/profile-icon.png" alt="Profile Icon" class="profile-icon">
+        <p class="username">Orlando Juárez</p>
+      </div>
+
+      <!-- Sección derecha (Enlaces y Modo Oscuro) -->
+      <div class="nav-right">
+        <button class="dark-mode-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre_mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+      
+      <!-- Menú hamburguesa -->
+      <div class="nav-right-mobile">
+        <button class="dark-mode-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Menú desplegable en móviles -->
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección "Sobre mí" -->
+    <section id="about" class="section">
+      <h1>Hola, soy <span class="neon-text">Orlando Gerardo Juárez Cruz</span></h1>
+      <p>Estudiante de Ingeniería en Sistemas Computacionales altamente motivado, con experiencia práctica
+        en Desarrollo Backend y Administración de Bases de Datos, así como una gran pasión por el Internet
+        de las Cosas y los Gráficos por Computadora.</p>
+    </section>
+
+    <!-- Sección "Habilidades" -->
+    <section id="skills" class="section">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill neon-box">HTML</div>
+        <div class="skill neon-box">CSS</div>
+        <div class="skill neon-box">JavaScript</div>
+        <div class="skill neon-box">React</div>
+        <div class="skill neon-box">Node.js</div>
+        <div class="skill neon-box">C/C++</div>
+        <div class="skill neon-box">Java</div>
+        <div class="skill neon-box">Python</div>
+      </div>
+    </section>
+
+    <!-- Sección "Experiencia" -->
+    <section id="experience" class="section">
+      <h2>Experiencia</h2>
+      <div class="experience-list">
+        <div class="experience-item neon-box">
+          <h3>Voluntario de traductor web Raspberry Pi Foundation</h3>
+          <p>2024-2025</p>
+          <br>
+          <p>Experiencia en la gestión y utilización de
+            herramientas como Jira, Slack y Crowdin para
+            traducir, probar, revisar y publicar proyectos en
+            el sitio web oficial de la Fundación Raspberry Pi.</p>
+          <br>
+        </div>
+        <div class="experience-item neon-box">
+          <h3>Fundador y poseedor Mr. Raven 3D</h3>
+          <p>2025-Presente</p>
+          <br>
+          <p>Experiencia en la gestión de un negocio de
+            impresión y modelado 3D, supervisando el
+            diseño, la producción, el servicio al cliente y las
+            operaciones financieras. Habilidad en el análisis
+            de mercado, adquisición de clientes y
+            optimización del flujo de trabajo.</p>
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección "Proyectos" -->
+    <section id="projects" class="section">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card neon-box">
+          <h3>Blog - "Red social"</h3>
+          <p>Blog donde puedes escribir articulos, buscar por autor, ver
+            publicaciones, comentar, entre otras cosas conectados a una base de datos
+          </p>
+        </div>
+        <div class="project-card neon-box">
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve del proyecto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contact" class="section">
+      <h2>Contacto</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit" class="neon-button">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="neon-text">&copy; 2025 Orlando Gerardo Juárez Cruz.</p>
+    <p class="neon-text">Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
