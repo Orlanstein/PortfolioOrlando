@@ -199,6 +199,25 @@ nav {
   text-align: center;
 }
 
+.project-card a {
+  display: inline-block; /* Hace que el enlace se comporte como un bloque */
+  margin-top: 15px; /* Espacio superior */
+  padding: 8px 16px; /* Espaciado interno */
+  background-color: #00ffcc; /* Fondo neón */
+  color: #0a0a0a; /* Texto oscuro para contraste */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 6px; /* Bordes redondeados */
+  border: 2px solid #00ffcc; /* Borde neón */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+.project-card a:hover {
+  background-color: transparent; /* Fondo transparente al hacer hover */
+  color: #00ffcc; /* Texto neón al hacer hover */
+  border-color: #00ffcc; /* Borde neón al hacer hover */
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -336,6 +355,24 @@ footer {
   color: var(--background-light); /* Texto blanco */
 }
 
+.light-mode .project-card a {
+  display: inline-block; /* Hace que el enlace se comporte como un bloque */
+  margin-top: 15px; /* Espacio superior */
+  padding: 8px 16px; /* Espaciado interno */
+  background-color: #ff00cc; /* Fondo neón */
+  color: #ffffff; /* Texto oscuro para contraste */
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 6px; /* Bordes redondeados */
+  border: 2px solid #ff00cc; /* Borde neón */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+.light-mode .project-card a:hover {
+  background-color: transparent; /* Fondo transparente al hacer hover */
+  color: #a5158c; /* Texto neón al hacer hover */
+  border-color: #a5158c; /* Borde neón al hacer hover */
+}
 .light-mode .contact-form input,
 .light-mode .contact-form textarea {
   background-color: var(--background-light);
