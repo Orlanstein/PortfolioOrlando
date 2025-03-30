@@ -181,6 +181,28 @@ nav {
   margin: 0 auto;
 }
 
+.section-about {
+  display: flex;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-about-icon {
+  width: 10rem;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ffcc;
+  margin-right: 2rem;
+}
+
+.section-about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section h1,
 .section h2 {
   margin-bottom: 20px;
@@ -313,6 +335,28 @@ footer {
 .light-mode .nav-links li a:hover {
   background: rgba(0, 123, 255, 0.1); /* Fondo azul claro al hacer hover */
   color: #ff00cc; /* Color azul al hacer hover */
+}
+
+.light-mode .section-about {
+  display: flex;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.light-mode .section-about-icon {
+  width: 10rem;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff00cc;
+  margin-right: 2rem;
+}
+
+.light-mode .section-about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .light-mode .section h1,
@@ -454,5 +498,67 @@ footer {
 
   .mobile-menu.active {
     display: flex; /* Muestra el menú móvil cuando está activo */
+  }
+}
+
+@media (max-width: 847px) {
+  .section-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+  }
+  
+  .section-about-icon {
+    width: 10rem;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00ffcc;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .section-about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .section-about-text p{
+    text-align: justify;
+    margin-top: 0.5rem;
+  }
+
+  .light-mode .section-about {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+  }
+  
+  .light-mode .section-about-icon {
+    width: 10rem;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ff00cc;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .light-mode .section-about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .light-mode .section-about-text p{
+    margin-top: 0.5rem;
+    text-align: justify;
   }
 }
